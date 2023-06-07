@@ -40,7 +40,6 @@ app.get("/join",(req,res)=>{
 })
 
 app.post("/join/subscription",  async (req,res)=>{
-    console.log(req.body)
     let donation  = parseInt(req.body.import) * 100;
 
     const order_data = {
