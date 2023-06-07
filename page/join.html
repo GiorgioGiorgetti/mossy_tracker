@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="join.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>Join</title>
+</head>
+<body>
+    <div>
+
+        <img src="/img/logo2.png" alt="">   
+
+        <h1>Sign up for membership</h1>
+        <form action="/join/subscription" method="post">
+            <label for="email">email
+                <input type="email" name="email" id="email" required  placeholder="youremail@gmail.com">
+            </label>
+            <label for="name">name
+                <input type="text" id="name" name="name" required  placeholder="Giorgio Giorgetti">
+            </label>
+            <label for="import">
+                Donation
+                <input type="number" name="import" id="import" step="1" placeholder="€" value="10">
+            </label>
+            <button type="submit">join</button>
+        </form>
+    </div>
+    <script>
+        const input = document.getElementById("import");
+        
+        input.onchange = ()=>{
+            console.log(input.value)
+            input.value = parseInt(input.value)
+        }
+    </script>
+</body>
+</html>

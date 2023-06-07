@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/admin/home.css">
+</head>
+<body>
+    <section>
+        <div class="title_element"> 
+            <h1 class="title">User traker</h1>
+            <select id="time">
+                <option value="today">today</option>
+                <option value="week" selected>this week</option>
+                <option value="month">this month</option>
+            </select>
+        </div>
+        <div class="grid_cnt">
+            <div id="canvas_cnt">
+                <h1>sessions</h1>
+                <canvas></canvas>
+            </div>
+            <div id="canvas_cnt">
+                <h1>interactions</h1>
+                <canvas></canvas>
+            </div>
+            <div id="canvas_cnt">
+                <h1>session duration</h1>
+                <canvas></canvas>
+            </div>
+            <div id="canvas_cnt">
+                <h1>sections interactions</h1>
+                <canvas></canvas>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/admin/home.js"></script>
+</body>
+</html>
